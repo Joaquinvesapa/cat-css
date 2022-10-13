@@ -29,23 +29,79 @@ body{
   border-radius: 50%;
   position: relative;
 }
-
+.parpado-left{
+  width: 50px;
+  height: 50px;
+  top: 70px;
+  left: 70px;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
 .eye-left{
   width: 50px;
   height: 50px;
   top: 70px;
   left: 70px;
-  background: var(--black);
+  background: var(--white);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.parpado-left:hover{
+  height: 40px;
+}
+.pupil-left{
+  content: '';
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 85%;
+  height: 85%;
+  background: var(--black);
   border-radius: 50%;
 }
 
+.iris-left{
+  width: 8px;
+  height:42px;
+  position: absolute;
+  left: 17px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--white);
+}
 .eye-right{
   width: 50px;
   height: 50px;
   top: 70px;
   right: 70px;
-  background: var(--black);
+  background: var(--white);
   position: absolute;
   border-radius: 50%;
+}
+.pupil-right{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 85%;
+  height: 85%;
+  background: var(--black);
+  border-radius: 50%;
+}
+.iris-right{
+  width: 8px;
+  height:42px;
+  position: absolute;
+  right: 17px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--white);
 }
