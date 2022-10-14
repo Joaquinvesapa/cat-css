@@ -1,0 +1,52 @@
+.eye{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 75% 0;
+    transform: rotate(45deg);
+    position: absolute;
+    overflow: hidden;
+}
+
+.ball{
+    width: 95px;
+    height: 95px;
+    background-color: rgb(64, 163, 243);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.sball{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.ceye{
+    width: 300px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 999;
+}
+.ceye span{
+    width: 100%;
+    height: 15%;
+    display: block;
+    background-color: #872efa;
+    border-radius: 0 0 60% 60%;
+    transition: .35s;
+}
+.eye:hover > .ceye span{
+    height: 100%;
+}
