@@ -5,7 +5,7 @@
 }
 :root{
   --backgrounnd: #9E54FF;
-  --skin: #FFCD4E;
+  --skin: #b3b3b3;
   --white: #FFFEFA;
   --black: #000000;
   --grey: #BABABA;
@@ -14,7 +14,7 @@
 
 
 body{
-  height: 100vh;
+  height: 100%;
   min-height: 600px;
   background: var(--backgrounnd);
   display: flex;
@@ -24,93 +24,18 @@ body{
 
 .head{
   width: 300px;
-  height: 225px;
+  height: 255px;
   background: var(--skin);
   border-radius: 50%;
   position: relative;
-}
- .parpado-left{
-  width: 50px;
-  height: 50px;
-  top: 70px;
-  left: 70px;
-  transform: rotate(55deg);
-  position: relative;
-  border-radius: 50% 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.eye-left{
-  width: 50px;
-  height: 50px;
-  top: 70px;
-  left: 70px;
-  background: var(--white);
-  border-radius: 85% 0 65% 0;
-  overflow: hidden;
-}/*
-.parpado-left:hover{
-  height: 40px;
-}*/
-
-.pupil-left{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 70%;
-  height: 70%;
-  background: var(--black);
-  border-radius: 50%;
-} 
-.iris-left{
-  width: 8px;
-  height: 37px;
-  left: 13px;
-  position: absolute;
-  border-radius: 50%;
-  overflow: hidden;
-  background: var(--white);
-  transform: rotate(-55deg);
+.head:hover .ceye-l span{
+  height: 100%;
 }
-
-.eye-left .shut-l{
-  width: 0px;
-  height: 50px;
-
-  transform: rotate(-47deg);
-  position: absolute;
-}
-.eye-right{
-  width: 50px;
-  height: 50px;
-  top: 70px;
-  right: 70px;
-  background: var(--white);
-  position: absolute;
-  border-radius: 50%;
-}
-.pupil-right{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 85%;
-  height: 85%;
-  background: var(--black);
-  border-radius: 50%;
-}
-.iris-right{
-  width: 8px;
-  height:42px;
-  position: absolute;
-  right: 17px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: var(--white);
+.head:hover .ceye-r span{
+  height: 100%;
 }

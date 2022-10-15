@@ -1,29 +1,32 @@
 
-.eyes{
+.container{
+    width: 65%;
+    height: 60px;
+    top: 30%;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
-    margin: auto;
+    justify-content: space-between;
 }
 
 
 /* RIGHT EYE */
 
 .eye-r{
-    width: 200px;
-    height: 200px;
+    width: 60px;
+    height: 60px;
     background-color: #fff;
     border-radius: 95% 0 65% 0;
-    transform: translate(80%) rotate(20deg);
-    position: absolute;
+    transform: rotate(20deg);
     overflow: hidden;
-    
+    /* border: 1px solid #262626; */
+    /* border-top: 2px solid #262626; */
+    /* border-bottom: 1px solid #262626; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .ball-r{
-    width: 95px;
-    height: 95px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(64, 163, 243);
     position: absolute;
     top: 54%;
@@ -33,8 +36,8 @@
 }
 
 .sball-r{
-    width: 12px;
-    height: 89px;
+    width: 5px;
+    height: 30px;
     background-color: rgb(32, 32, 32);
     position: absolute;
     top: 50%;
@@ -44,41 +47,42 @@
 }
 
 .ceye-r{
-    width: 300px;
-    height: 180px;
+    width: 85px;
+    height: 60px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 53%;
+    left: 53%;
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 999;
 }
 .ceye-r span{
     width: 100%;
-    height: 15%;
+    height: 22%;
     display: block;
-    background-color: #872efa;
-    border-radius: 0 0 60% 60%;
+    background-color: #949393;
+    border-radius: 0 0 70% 70%;
     transition: .35s;
 }
-.eye-r:hover > .ceye-r span{
+
+/* .eye-r:hover > .ceye-r span{
     height: 100%;
-}
+} */
 
 /* LEFT EYE */
 
 .eye-l{
-    width: 200px;
-    height: 200px;
+    width: 60px;
+    height: 60px;
     background-color: #fff;
     border-radius: 95% 0 65% 0;
-    transform: translate(-80%)rotate(70deg);
-    position: absolute;
+    transform: rotate(70deg);
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .ball-l{
-    width: 95px;
-    height: 95px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(64, 163, 243);
     position: absolute;
     top: 54%;
@@ -88,8 +92,8 @@
 }
 
 .sball-l{
-    width: 12px;
-    height: 89px;
+    width: 5px;
+    height: 30px;
     background-color: rgb(32, 32, 32);
     position: absolute;
     top: 50%;
@@ -99,22 +103,23 @@
 }
 
 .ceye-l{
-    width: 300px;
-    height: 180px;
+    width: 85px;
+    height: 60px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 53%;
+    left: 53%;
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 999;
 }
 .ceye-l span{
     width: 100%;
-    height: 15%;
+    height: 22%;
     display: block;
-    background-color: #872efa;
+    background-color: #949393;
     border-radius: 0 0 60% 60%;
     transition: .35s;
 }
-.eye-l:hover > .ceye-l span{
+
+/* .container:hover > .ceye-l span, .ceye-r span {
     height: 100%;
-}
+} */
