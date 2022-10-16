@@ -100,6 +100,44 @@ body{
     z-index: 999;
 }
 
+.shut{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--skin);
+    border: .5vmin solid rgba(0, 0, 0, 0.151);
+    position: absolute;
+    border-radius: 50%;
+    clip-path: inset(0% 0 100% 0);
+    transition: .35s;
+}
+.shut-l{
+    left: 17%;
+}
+.shut-r{
+    right: 17%;
+}
+
+.shut-up{
+    position: absolute;
+    width: 26%;
+    height: 101%;
+    background-color: var(--skin);
+    border: .5vmin solid var(--skin);
+    position: absolute;
+    border-radius: 50%;
+    clip-path: inset(0% 0 100% 0);
+    transition: .35s;
+}
+.shut-up-l{
+    left: 16.5%;
+}
+.shut-up-r{
+    right: 16.5%;
+}
+
+
+
 .blush{
     width: 15%;
     height: 10%;
@@ -187,12 +225,22 @@ body{
     transition: .35s;
 }
 
-.head:active .tongue{
+.container:active .tongue{
     height: 30%;
 }
 
-.head:active .blush{
+.container:active .blush{
     opacity: 0.3;
+}
+
+.container:active .shut{
+    clip-path: inset(0% 0 0% 0);
+
+}
+
+.container:active .shut-up{
+    clip-path: inset(0% 0 40% 0);
+
 }
 
 
