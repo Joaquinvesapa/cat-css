@@ -187,11 +187,11 @@ body{
     transition: .35s;
 }
 
-.head:hover .tongue{
+.head:active .tongue{
     height: 30%;
 }
 
-.head:hover .blush{
+.head:active .blush{
     opacity: 0.3;
 }
 
