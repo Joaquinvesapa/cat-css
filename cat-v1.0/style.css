@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --backgrounnd: #9E54FF;
+  --skin: #b3b3b3;
+  --white: #FFFEFA;
+  --black: #000000;
+  --grey: #BABABA;
+  --rose: #FF9AC9;
+}
+
+
+body{
+  height: 100%;
+  min-height: 990px;
+  background: rgb(2,0,36);
+  background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgba(52,52,250,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head{
+  width: 300px;
+  height: 255px;
+  background: rgb(159,159,159);
+background: radial-gradient(circle, rgba(159,159,159,1) 0%, rgba(179,179,179,1) 89%, rgba(108,106,106,1) 100%);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.head:hover .ceye-l span{
+  height: 100%;
+}
+.head:hover .ceye-r span{
+  height: 100%;
+}
