@@ -1,0 +1,56 @@
+body{
+    margin: 0; padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+:root{
+    --container-hue: 30;
+    --head__bg: #fff;
+    --size: 80;
+    --unit: calc((var(--size) / 820 ) * 1vmin);
+    --skin:#fff5e4;
+    --skindark:#ddd3c0;
+    --nose: #FFE3E1;
+    --ear: #FFD1D1;
+    --blush: #FF9494;
+    --blueeye: #9ADCFF;
+    --greeneye: #C3FF99;
+}
+
+.container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(820 * var(--unit));
+    height: calc(1000 * var(--unit));
+    background: hsla(var(--container-hue), 50%, 70%, 0.5);
+}
+
+.ears{
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    border: 4vmin solid #fdf3df;
+    border-radius: 70% 70% 0% 0% / 120% 120% 0% 0%;
+    background: var(--ear);
+    clip-path: inset(0 0 80% 0);
+    top: 0;
+    left: 0;
+}
+.ear-l{
+    transform: rotate(29deg) translate(129%, -3%);
+}
+.ear-r{
+    transform: rotate(-29deg) translate(79%, 28%);
+}
+.head{
+    width: 60%;
+    height: 46%;
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background: var(--skin);
+    border-radius: 50% 50% 50% 50% / 47% 47% 60% 60%;
+}
