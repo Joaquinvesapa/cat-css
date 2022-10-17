@@ -1,3 +1,8 @@
+@font-face {
+    font-family: meow;
+    src: url(fonts/Meowcat.ttf);
+}
+
 body{
     margin: 0; padding: 0;
     position: relative;
@@ -15,6 +20,48 @@ body{
     --blush: #FF9494;
     --blueeye: #9ADCFF;
     --greeneye: #C3FF99;
+}
+.text {
+    position: absolute;
+    background: #fff;
+    top: 13%;
+    left: 10%;
+    padding: 0 5%;
+    border-radius: 10% 10% 10% 10% / 30% 30% 30% 30%;
+    font-size: 275%;
+    font-family: meow;
+    letter-spacing: 100%;
+    z-index: 5;
+    animation: text 3s infinite;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+    box-shadow: 0px 0px 5px 0px var(--black);
+}
+.text p {
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes text {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    0% { transform: scale(1); }
+  }
+
+.acariciame{
+    height: 10%;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-family: meow;
+    color: #000;
+    opacity: .7;
+}   
+.acariciame p{
+    padding: 0;
+    margin: 0;
+    font-size: 200%;
 }
 
 .container{
@@ -39,15 +86,15 @@ body{
     left: 0;
 }
 .ear-l{
-    transform: rotate(29deg) translate(129%, -3%);
+    transform: rotate(29deg) translate(147%, 7%);
 }
 .ear-r{
-    transform: rotate(-29deg) translate(79%, 28%);
+    transform: rotate(-29deg) translate(55%, 38%);
 }
 .head{
     width: 60%;
     height: 46%;
-    top: 50%;
+    top: 60%;
     left:50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -241,6 +288,10 @@ body{
 .container:active .shut-up{
     clip-path: inset(0% 0 40% 0);
 
+}
+
+.container:active .text {
+    opacity: 1;
 }
 
 
