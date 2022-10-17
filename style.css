@@ -21,6 +21,76 @@ body{
     --blueeye: #9ADCFF;
     --greeneye: #C3FF99;
 }
+
+.detail{
+    position: absolute;
+    font-family: meow;
+    font-size: 150%;
+    opacity: 0;
+    transition: .35s;
+}
+.detail-1{
+    top: 30%;
+    left: 10%;
+    transform: rotate(-20deg);
+    font-size: 190%;
+    animation: detail1 5s infinite;
+}
+.detail-2{
+    top: 20%;
+    right: 10%;
+    font-size: 200%;
+    transform: rotate(30deg);
+    animation: detail2 4s infinite;
+}
+.detail-3{
+    top: 40%;
+    right: 8%;
+    font-size: 140%;
+    transform: rotate(-20deg);
+    animation: detail3 7s infinite;
+}
+.detail-4{
+    top: 27%;
+    left: 50%;
+    transform: rotate(20deg);
+    font-size: 190%;
+    animation: detail4 5s infinite;
+}
+.detail-5{
+    top: 45%;
+    left: 8%;
+    transform: rotate(10deg);
+    animation: detail5 9s infinite;
+}
+
+@keyframes detail1 {
+    0% { transform: rotate(-20deg) scale(1); }
+    50% { transform: rotate(-20deg) scale(1.2); }
+    0% { transform: rotate(-20deg) scale(1); }
+  }
+  @keyframes detail2 {
+    0% { transform: rotate(30deg) scale(1); }
+    50% { transform: rotate(30deg) scale(1.2); }
+    0% { transform: rotate(30deg) scale(1); }
+  }
+  @keyframes detail3{
+    0% { transform: rotate(-20deg) scale(1); }
+    50% { transform: rotate(-20deg) scale(1.2); }
+    0% { transform: rotate(-20deg) scale(1); }
+  }
+  @keyframes detail4 {
+    0% { transform: rotate(20deg) scale(1); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    0% { transform: rotate(20deg) scale(1); }
+  }
+  @keyframes detail5 {
+    0% { transform: rotate(10deg) scale(1); }
+    50% { transform: rotate(10deg) scale(1.2); }
+    0% { transform: rotate(10deg) scale(1); }
+  }
+
+
 .text {
     position: absolute;
     background: #fff;
@@ -135,7 +205,15 @@ body{
     transform: translate(-50%,-50%);
     background: #000;
     border-radius: 50%;
+    animation: pupil 6s infinite;
 }
+@keyframes pupil {
+    0% { transform: translate(-50%,-50%); }
+    20% { transform: translate(-68%,-50%); }
+    40% { transform: translate(-50%,-68%); }
+    60% { transform: translate(-32%,-50%); }
+    80% { transform: translate(-50%,-32%); }
+  }
 .pupil::after{
     content: '';
     position: absolute;
@@ -291,6 +369,9 @@ body{
 }
 
 .container:active .text {
+    opacity: 1;
+}
+.container:active .detail{
     opacity: 1;
 }
 
